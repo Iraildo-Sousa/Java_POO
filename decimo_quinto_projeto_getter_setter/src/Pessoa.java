@@ -74,7 +74,306 @@ public class Pessoa {
 
     }
 
-    
+    public String getNome() {
 
+        return Nome;
+
+    }
+
+    public void setNome(String Nome) {
+
+        this.Nome = Nome;
+
+        if (Nome == null) {
+
+            System.out.println("Nome inválido!");
+
+        }
+
+        else {
+
+            System.out.println("Nome: " + getNome());
+
+        }
+
+    }
+
+    /* ====================================================================================================== */
+
+    public int getIdade() {
+
+        return idade;
+
+    }
+
+    public void setIdade(int idade) {
+
+        this.idade = idade;
+
+        if (idade > 0) {
+
+            System.out.println("Idade: " + getIdade());
+
+        }
+
+        else {
+
+            System.out.println("Sua idade está inválida!");
+
+        }
+
+    }
+
+    /* ====================================================================================================== */
+
+
+    public String getEndereco() {
+
+        return endereco;
+
+    }
+
+    public void setEndereco(String endereco) {
+
+        this.endereco = endereco;
+
+        if (endereco == null) {
+
+            System.out.println("Endereço inválido!");
+
+        }
+
+        else {
+
+            System.out.println("Endereço: " + getEndereco());
+
+        }
+
+    }
+
+    /* ====================================================================================================== */
+
+    public String getTelefone() {
+
+        return telefone;
+
+    }
+
+    public void setTelefone(String telefone) {
+
+        this.telefone = telefone;
+
+        if (telefone.length() == 16) {
+
+            System.out.println("Telefone: " + getTelefone());
+
+        }
+
+        else {
+
+            System.out.println("Número de telefone inválido!");
+        }
+
+    }
+
+    /* ====================================================================================================== */
+
+    public String getEmail() {
+
+        return email;
+
+    }
+
+    public void setEmail(String email) {
+
+        this.email = email;
+
+        if (email == null) {
+
+            System.out.println("Email inválido!");
+
+        }
+
+        else {
+
+            System.out.println("Email: " + getEmail());
+
+        } 
+
+    }
+
+    /* ====================================================================================================== */
+
+    public String getCpf() {
+
+        return cpf;
+
+    }
+
+    public void setCpf(String cpf) {
+
+        this.cpf = cpf;
+
+        if (cpf.length() == 14) {
+
+            System.out.println("CPF: " + getCpf());
+
+        }
+
+        else {
+
+            System.out.println("Número inválido!");
+
+        }
+
+    }
+
+    /* ====================================================================================================== */
+
+    public String getSexo() {
+
+        return sexo;
+
+    }
+
+    public void setSexo(String sexo) {
+
+        this.sexo = sexo;
+
+        if (sexo == "masculino" || sexo == "feminino") {
+
+            System.out.println("Sexo: " + getSexo());
+
+        }
+
+        else {
+
+            System.out.println("Sexualidade inválida!");
+
+        }
+
+    }
+
+    /* ====================================================================================================== */
+
+    public String getEstadoCivil() {
+
+        return estadoCivil;
+
+    }
+
+    public void setEstadoCivil(String estadoCivil) {
+
+        this.estadoCivil = estadoCivil;
+
+        if (estadoCivil == "solteiro" || estadoCivil == "casado" || estadoCivil == "casada" || estadoCivil == "viúvo") {
+
+            
+        }
+
+    }
+
+    /* ====================================================================================================== */
+
+    public String getProfissao() {
+
+        return profissao;
+
+    }
+
+    public void setProfissao(String profissao) {
+
+        this.profissao = profissao;
+
+    }
+
+    /* ====================================================================================================== */
+
+    public double getSalario() {
+
+        return salario;
+
+    }
+
+    public void setSalario(double salario) {
+
+        this.salario = salario;
+
+    }
+
+    /* ====================================================================================================== */
+
+    public String getNacionalidade() {
+
+        return nacionalidade;
+
+    }
+
+    public void setNacionalidade(String nacionalidade) {
+
+        this.nacionalidade = nacionalidade;
+
+    }
+
+    /* ====================================================================================================== */
+
+    public String getFilhos() {
+
+        return filhos;
+
+    }
+
+    public void setFilhos(String filhos) {
+
+        this.filhos =  filhos;
+
+    }
+
+    /* ====================================================================================================== */
+    /* ====================================================================================================== */
+
+    /* Métodos Adicionais */
+
+    public void exibirDetalhes() {
+
+        getNome();
+        getIdade();
+        getCpf();
+        getTelefone();
+        getEmail();
+        getCpf();
+        getSexo();
+        getEstadoCivil();
+        getProfissao();
+        getSalario();
+        getNacionalidade();
+        getFilhos();
+
+    }
+
+    /* Método main */
     
+    /* public Pessoa (String Nome, int idade, String endereco, String telefone, String email, String cpf, String sexo, String estadoCivil, String profissao, double salario, String nacionalidade, String filhos) */
+    
+    public static void main (String [] args) {
+
+        Pessoa pessoa = new Pessoa("Marcos", 28, "Guará, Distrito Federal", "(61) 91000-0000", "nodelayasdf@gmail.com", "012.133.211-23", "masculino", "casado", "Gerente de Projetos em TI", 15000, "brasileiro", "não");
+
+        pessoa.setNome("Marcos");
+        pessoa.setIdade(28);
+        pessoa.setEndereco("Guará, Distrito Federal");
+        pessoa.setTelefone("(61) 9 1000-0000");
+        pessoa.setEmail("nodelayasdf@gmail.com");
+        pessoa.setCpf("012.133.211-23");
+        pessoa.setSexo("masculino");
+        pessoa.setEstadoCivil("casado");
+        pessoa.setProfissao("Gerente ");
+        pessoa.setSalario(15000);
+        pessoa.setNacionalidade("brasileiro");
+        pessoa.setFilhos("não");
+    
+        pessoa.exibirDetalhes();
+
+    }
+
 }
