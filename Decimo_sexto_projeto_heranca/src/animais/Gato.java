@@ -10,5 +10,17 @@ public class Gato extends Animais {
 
     }
 
+    public void lamber() {
+
+        System.out.printf("O %s lambeu.", getNome());
+
+    }
+
+    public void miar() {
+
+        System.out.printf("O %s miou.\n", getNome());
+
+    }
+
 
 }
