@@ -46,7 +46,7 @@ public class Veiculo {
 
     public void detalhes() {
 
-        System.out.printf("%nMarca: %s%nAno: %n%n", marca, ano);
+        System.out.printf("%nMarca: %s%nAno: %d%n", marca, ano);
 
     }
 
