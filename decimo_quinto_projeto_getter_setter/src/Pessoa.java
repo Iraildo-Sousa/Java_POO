@@ -268,7 +268,14 @@ public class Pessoa {
 
         if (estadoCivil == "solteiro" || estadoCivil == "casado" || estadoCivil == "casada" || estadoCivil == "viúvo") {
 
+            System.out.println("Estado civil " + getEstadoCivil());
             
+        }
+
+        else {
+
+            System.out.println("Informação inválida!");
+
         }
 
     }
@@ -284,6 +291,7 @@ public class Pessoa {
     public void setProfissao(String profissao) {
 
         this.profissao = profissao;
+        System.out.println("Profissão: marceneiro");
 
     }
 
@@ -293,11 +301,26 @@ public class Pessoa {
 
         return salario;
 
+
     }
 
     public void setSalario(double salario) {
 
         this.salario = salario;
+
+        
+        if (salario > 0) {
+
+
+            System.out.println("Salário: " + getSalario());
+
+        }
+
+        else {
+
+            System.out.println("Informações inválidas!");
+
+        }
 
     }
 
@@ -312,6 +335,7 @@ public class Pessoa {
     public void setNacionalidade(String nacionalidade) {
 
         this.nacionalidade = nacionalidade;
+        System.out.println("Nacionalidade: " + getNacionalidade());
 
     }
 
@@ -322,10 +346,24 @@ public class Pessoa {
         return filhos;
 
     }
+        
 
     public void setFilhos(String filhos) {
 
         this.filhos =  filhos;
+
+        if (filhos == null) {
+
+            System.out.println("Número inválido!");
+
+        } 
+
+        else {
+
+            System.out.println("Filhos: " + getFilhos());
+
+        }
+
 
     }
 
