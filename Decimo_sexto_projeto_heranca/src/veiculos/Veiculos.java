@@ -41,7 +41,7 @@ public class Veiculos {
 
     public void exibir_informacoes() {
 
-        System.out.printf("Modelo: %s%nCapacidade do tanque: %.1f%n");
+        System.out.printf("Modelo: %s%nCapacidade do tanque: %.1fl%n", modelo, capacidade_tanque);
 
     }
 
